@@ -1,6 +1,4 @@
 package main
-//import "fmt"
-//import "unsafe"
 import (
 	"fmt"
 	"unsafe"
