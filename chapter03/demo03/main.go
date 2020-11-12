@@ -1,21 +1,18 @@
 package main
 import "fmt"
 
-//下面这三个var是定义全局变量
-var n1 = 100
-var n2 = 200
-var name = "jack"
+var n4 = 77
+var name = "zhang"
+var n5 = 55
 
-//下面这种方式和上面这种凡是也是一次性声明、并且两者之间是等价的
+//
 var (
-	n3 = 77
-	n4 = 99
-	name2 = "gui"
+	n1 = 1
+	n2 = 2
+	name2 = "giu"
 )
 
 func main(){
-
-	//输出上面定义的三个全局变量
-	fmt.Println("n1=",n1 ,"n2=",n2 ,"name=",name)
-	fmt.Println("n3=",n3 ,"n4=",n4 ,"name2=",name2)
-} 
+	fmt.Println("n4=",n4,"name=",name,"n5=",n5)
+	fmt.Println("n1=",n1,"n2=",n2,"name2=",name2)
+}

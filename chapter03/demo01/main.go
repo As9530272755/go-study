@@ -2,8 +2,10 @@ package main
 import "fmt"
 
 func main(){
-
-	var i int			//定义变量，这个变量的名字是为i、类型是int值为10
-	i = 10				//给i赋值
-	fmt.Println("i=",i)	//使用变量
+	// 定义变量
+	var i int = 10
+	// 定义完了变量之后我们就需要给这个 i 赋值
+	i = 10
+	// 赋值之后我们在使用变量
+	fmt.Println("i=",i)
 }
