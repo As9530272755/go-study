@@ -39,5 +39,21 @@ func main()  {
 	fmt.Println()
 
 	// 假如就像输出当前月份
-	fmt.Printf(now.Format("当前月份：01"))
+	fmt.Printf(now.Format("当前月份：01\n"))
+
+	// 需求，每隔 1 秒钟打印一个数字，打印到 100 时就退出。
+	i := 0
+	for {
+		i++
+		fmt.Printf("当前毫秒数 = %v\n",i)
+		// 打印完了一次之后就休眠 0.1 秒
+		time.Sleep(time.Microsecond * 100)
+		// 加个判断如果 i 等于 100 我们就 break 退出当前循环
+		if i == 100 {
+			break
+		}
+	}
+
+	// unix 和 unixnano 的使用
+	fmt.Printf("unix 时间戳 = %v unixnano 时间戳 = %v\n",now.Unix(),now.UnixNano())
 }
